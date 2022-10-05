@@ -7,12 +7,16 @@
 }
 
 @font-face {
-    font-family: 'Roboto';
-    src: url(Roboto-Regular.ttf);
+    font-family: 'Ubuntu';
+    src: url(Ubuntu-Medium.ttf);
     font-weight: normal;
     font-style: normal;
 }
 
+body {
+    display: flex;
+    flex-wrap: nowrap;
+}
 
 #left {
     background-image: url('roman-ivasyk-vYW_j1MLXAE-unsplash.jpg');
@@ -26,16 +30,28 @@
 #right {
     min-height: 100vh;
     min-width: 70%;
+    max-height: 100vh;
+    max-width: 70%;
     float: right;
     display: flex;
-    justify-content: center;
-    flex-direction: row;
     flex-wrap: wrap;
 }
 
-#right>p {
-    clear: both;
+#right1 {
+    font-family: 'sofiaregular';
+    font-size: 2em;
+    margin: 5%;
+    margin-right: 25%;
+    margin-left: 10%;
+    height: 5%;
 }
+
+#right2 {
+    font-family: 'sofiaregular';
+    font-size: 2em;
+    margin-right: 25%;
+    margin-left: 10%;
+    height: 5%;}
 
 #title {
     width: 100%;
@@ -64,10 +80,40 @@
     margin-top: 98%;
     text-align: right;
     margin-right: 1vw;
-    font-family: 'Roboto';
+    font-family: 'Ubuntu';
     color: black;
     text-decoration: none;
     font-size: 0.6em;
+}
+
+form {
+    width: 80%;
+    margin-top: -25%;
+    margin-left: 10%;
+    height: auto;
+    box-shadow: 0.3vw 0.3 vw;
+}
+
+form>legend {
+    font-family: 'Ubuntu';
+    font-size: 1.5em;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    height: 30%;
+    border: none;
+}
+
+fieldset>div {
+    font-family: 'Ubuntu';
+    font-size: 1.3em;
+    flex-basis: 50%
+}
+
+div>input {
+    border: grey;
 }
 
 a:link {
