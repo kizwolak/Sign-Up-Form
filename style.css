@@ -112,8 +112,9 @@ fieldset>div {
     font-size: 1.3em;
 }
 
-div>input {
-    border: 1px solid rgb(199, 187, 187);
+input {
+    border: 0.2vw solid rgb(199, 187, 187);
+    border-radius: 1vw;
     float: right;
 }
 
@@ -137,6 +138,30 @@ a:active {
     color: inherit;
 }
 
-input:valid {
-    border: 1px solid green;
+input:hover {
+    border: 0.2vw solid rgb(218, 250, 101);
+    border-radius: 1vw;
+}
+
+input:focus {
+    outline: none !important;
+    border: 0.2vw solid pink;
+    border-radius: 1vw;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+    outline: none !important;
+    border: 0.2vw solid red;
+    border-radius: 1vw;
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+    outline: none !important;
+    border: 0.2vw solid green;
+    border-radius: 1vw;
+}
+
+.tooltip {
+    font-size: 1.3vh;
+    color: silver;
 }
