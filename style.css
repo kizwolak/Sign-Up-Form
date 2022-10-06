@@ -179,4 +179,8 @@ input[id="email"]:not(:focus):not(:placeholder-shown):invalid+div:after {
 
 button {
     border-radius: 1vw;
+    font-family: 'sofiaregular';
+    background-color: rgb(82, 216, 250);
+    width: 10vw;
+    font-size: 1.5em;
 }
