@@ -87,7 +87,6 @@ form {
     width: 80%;
     margin-left: 10%;
     height: fit-content;
-    box-shadow: 0.1vw 0.1vw 1vw;
     display: flex;
     flex-direction: column;
     row-gap: 3vh;
@@ -105,6 +104,8 @@ fieldset {
     border: none;
     row-gap: 3vh;
     column-gap: 4vw;
+    box-shadow: 0.1vw 0.1vw 1vw;
+
 }
 
 fieldset>div {
@@ -183,4 +184,39 @@ button {
     background-color: rgb(82, 216, 250);
     width: 10vw;
     font-size: 1.5em;
+}
+
+#btn:hover {
+    background-color: coral;
+}
+
+#btn:active {
+    background-color: rgb(31, 245, 113);
+}
+
+#logon:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logon:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+#logon:hover {
+    text-decoration: none;
+    color: purple;
+}
+
+#logon:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#account {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 5%;
 }
